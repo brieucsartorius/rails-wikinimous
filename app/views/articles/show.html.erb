@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<h1><%= link_to "WIKINONIMOUS", "/articles"%></h1>
+
+<h2><%= @article.title %></h2>
+
+<%= link_to '', edit_article_path(@article), { class: 'fa fa-pencil', aria_hidden: 'true' } %>
+<%= link_to '', article_path(@article), { method: :delete, class: 'fa fa-trash', aria_hidden: 'true' } %>
+
+<p><%= @article.content %></p>
+
